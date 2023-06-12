@@ -1,0 +1,16 @@
+ii  php-cli                           2:8.2+93+0~20230409.46+debian11~1.gbpdb4dcc all          command-line interpreter for the PHP scripting language (default)
+ii  php-common                        2:93+0~20230409.46+debian11~1.gbpdb4dcc     all          Common files for PHP packages
+rc  php8.1-bcmath                     8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        Bcmath module for PHP
+rc  php8.1-cli                        8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        command-line interpreter for the PHP scripting language
+rc  php8.1-common                     8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        documentation, examples and common module for PHP
+rc  php8.1-fpm                        8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        server-side, HTML-embedded scripting language (FPM-CGI binary)
+rc  php8.1-mbstring                   8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        MBSTRING module for PHP
+rc  php8.1-mysql                      8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        MySQL module for PHP
+rc  php8.1-opcache                    8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        Zend OpCache module for PHP
+rc  php8.1-readline                   8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        readline module for PHP
+rc  php8.1-sqlite3                    8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        SQLite3 module for PHP
+rc  php8.1-xml                        8.1.18-1+0~20230517.40+debian11~1.gbpad774c amd64        DOM, SimpleXML, XML, and XSL module for PHP
+ii  php8.2-cli                        8.2.6-1+0~20230512.20+debian11~1.gbpf965ac  amd64        command-line interpreter for the PHP scripting language
+ii  php8.2-common                     8.2.6-1+0~20230512.20+debian11~1.gbpf965ac  amd64        documentation, examples and common module for PHP
+ii  php8.2-opcache                    8.2.6-1+0~20230512.20+debian11~1.gbpf965ac  amd64        Zend OpCache module for PHP
+ii  php8.2-readline                   8.2.6-1+0~20230512.20+debian11~1.gbpf965ac  amd64        readline module for PHP

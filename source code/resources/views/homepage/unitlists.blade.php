@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Blog</title>
+    <title>Daftar Bank Sampah dalam website ini</title>
     <link href="{{ asset('bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('bootstrap/bootstrap-icons.css') }}" rel="stylesheet">
-    @vite(['resource/css/welcome.css', 'resource/css/style.css'])
 
+    @vite(['resources/css/welcome.css', 'resources/css/style.css'])
 </head>
 
 <body>
@@ -41,17 +41,17 @@
                                 <br>
                                 <ul style="list-style: none">
                                     <li>
-                                        <h2 class="h5">alamat bank sampah</h2>
+                                        <h2 class="h5">Alamat Bank Sampah</h2>
                                         <p>{{ $unit->alamat_unit }}</p>
                                     </li>
                                     <li>
-                                        <h2 class="h5">kecamatan asal bank sampah</h2>
+                                        <h2 class="h5">Kecamatan asal Bank Sampah</h2>
                                         <p>{{ $unit->kecamatan_unit }}</p>
                                     </li>
                                     <li class="pt-4">
                                         <p>
                                             <small>
-                                                <i>lihat cerita mereka <a href="{{ route('blog.by.author', ['selected' => $unit->id]) }}">disini</a></i>
+                                                <i>Lihat cerita mereka <a href="{{ route('blog.by.author', ['selected' => $unit->id]) }}" style="color:blue"							>disini</a></i>
                                             </small>
                                         </p>
                                     </li>

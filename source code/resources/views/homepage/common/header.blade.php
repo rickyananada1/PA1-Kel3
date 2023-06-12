@@ -1,7 +1,7 @@
 <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="{{ route('homepage') }}" class="logo d-flex align-items-center">
+      <a href="{{ route('homepage') }}" class="logo d-flex align-items-center navbar-brand">
         <span>{{ \App\Models\Homepage::find('judul_website')->value }}</span>
       </a>
 

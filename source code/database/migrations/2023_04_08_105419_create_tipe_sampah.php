@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('tipe_sampah', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_sampah')->unique();
+            $table->string('nama_sampah');
             $table->text('deskripsi_tipe');
             $table->foreignId('unit_id')->references('id')->on('unit');
             $table->timestamps();

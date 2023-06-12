@@ -53,7 +53,7 @@
 
                 <div class="mt-4">
                     <x-input-label for="nik_nasabah" :value="__('NIK Nasabah')" />
-                    <x-text-input id="nik_nasabah" class="block mt-1 w-full" type="number" name="nik_nasabah" required autofocus />
+                    <x-text-input id="nik_nasabah" class="block mt-1 w-full" minlength="12" maxlength="12" type="number" name="nik_nasabah" required autofocus />
                     <x-input-error :messages="$errors->get('nik_nasabah')" class="mt-2" />
                 </div>
 
