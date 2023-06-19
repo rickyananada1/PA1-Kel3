@@ -30,7 +30,7 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function (){
 
         Route::prefix('homepage')->group(function (){
             Route::get('/', [\App\Http\Controllers\HomepageController::class, 'ShowEditHomepage'])->name('admin.homepage.update.form'); // ini untuk formulir
-            Route::post('/push', [\App\Http\Controllers\HomepageController::class, 'pushHomepageUpdate'])->name('admin.homepage.update.push'); // ini untuk ngepush update
+            Route::post('/push/{section}', [\App\Http\Controllers\HomepageController::class, 'pushHomepageUpdate'])->name('admin.homepage.update.push'); // ini untuk ngepush update
         });
 
 
@@ -76,17 +76,17 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function (){
                 Route::get('tarik/{id}', [\App\Http\Controllers\DataSaldoController::class, 'ShowTarikForm'])->name('nasabah.saldo.tarik'); // either deposit or tarik
             });
 
-            // blog
-            Route::prefix('blog')->group(function (){
-                Route::get('/', [\App\Http\Controllers\BlogController::class, 'listBlog'])->name('blog.list');
-                Route::get('/write', [\App\Http\Controllers\BlogController::class, 'NewBlogForm'])->name('blog.write');
-                Route::get('/edit/{id}', [\App\Http\Controllers\BlogController::class, 'UpdateBlogForm'])->name('blog.edit');
+            // cerita
+            Route::prefix('cerita')->group(function (){
+                Route::get('/', [\App\Http\Controllers\CeritaController::class, 'listCerita'])->name('cerita.list');
+                Route::get('/write', [\App\Http\Controllers\CeritaController::class, 'NewCeritaForm'])->name('cerita.write');
+                Route::get('/edit/{id}', [\App\Http\Controllers\CeritaController::class, 'UpdateCeritaForm'])->name('cerita.edit');
 
                 Route::prefix('kategori')->group(function (){
-                    // kategori blog
-                    Route::get('/', [\App\Http\Controllers\BlogController::class, 'listCategory'])->name('blog.kategori.home');
-                    Route::get('/tambah', [\App\Http\Controllers\BlogController::class, 'NewCategoryForm'])->name('blog.kategori.tambah');
-                    Route::get('/edit/{id}', [\App\Http\Controllers\BlogController::class, 'EditCategoryForm'])->name('blog.kategori.edit');
+                    // kategori cerita
+                    Route::get('/', [\App\Http\Controllers\CeritaController::class, 'listCategory'])->name('cerita.kategori.home');
+                    Route::get('/tambah', [\App\Http\Controllers\CeritaController::class, 'NewCategoryForm'])->name('cerita.kategori.tambah');
+                    Route::get('/edit/{id}', [\App\Http\Controllers\CeritaController::class, 'EditCategoryForm'])->name('cerita.kategori.edit');
                 });
             });
 
@@ -108,19 +108,19 @@ Route::middleware(['auth', 'verified'])->prefix('dashboard')->group(function (){
                     });
                 });
 
-                Route::prefix('blog')->group(function (){
+                Route::prefix('cerita')->group(function (){
 
-                    // blog
-                    Route::post('ush', [\App\Http\Controllers\BlogController::class, 'PushBlog'])->name('blog.action.push');
-                    Route::post('update/{id}', [\App\Http\Controllers\BlogController::class, 'updateBlog'])->name('blog.action.update');
-                    Route::get('destroy/{id}', [\App\Http\Controllers\BlogController::class, 'DestroyBlog'])->name('blog.action.destroy');
+                    // cerita
+                    Route::post('ush', [\App\Http\Controllers\CeritaController::class, 'PushCerita'])->name('cerita.action.push');
+                    Route::post('update/{id}', [\App\Http\Controllers\CeritaController::class, 'updateCerita'])->name('cerita.action.update');
+                    Route::get('destroy/{id}', [\App\Http\Controllers\CeritaController::class, 'DestroyCerita'])->name('cerita.action.destroy');
 
 
                     Route::prefix('kategori')->group(function (){
-                        // kategori blog
-                        Route::post('push', [\App\Http\Controllers\BlogController::class, 'PushCategory'])->name('blog.kategori.action.push');
-                        Route::post('update/{id}', [\App\Http\Controllers\BlogController::class, 'UpdateCategory'])->name('blog.kategori.action.update');
-                        Route::get('destroy/{id}', [\App\Http\Controllers\BlogController::class, 'DestroyCategory'])->name('blog.kategori.action.destroy');
+                        // kategori cerita
+                        Route::post('push', [\App\Http\Controllers\CeritaController::class, 'PushCategory'])->name('cerita.kategori.action.push');
+                        Route::post('update/{id}', [\App\Http\Controllers\CeritaController::class, 'UpdateCategory'])->name('cerita.kategori.action.update');
+                        Route::get('destroy/{id}', [\App\Http\Controllers\CeritaController::class, 'DestroyCategory'])->name('cerita.kategori.action.destroy');
                     });
                 });
 

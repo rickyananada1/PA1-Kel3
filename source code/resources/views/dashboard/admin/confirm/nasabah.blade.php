@@ -3,22 +3,22 @@
     <div class="d-flex justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
             <div class="d-flex justify-content-between">
-                <h1 class="h2">daftar pengguna nasabah</h1>
+                <h1 class="h2">Daftar Pengguna Nasabah</h1>
             </div>
 
             <div class="card mt-5">
                 <div class="card-body">
-                    <h2 class="h5 fw-bold py-2 text-center">daftar nasabah yang belum aktif</h2>
+                    <h2 class="h5 fw-bold py-2 text-center">Daftar Nasabah Yang Belum Aktif</h2>
                     <table class="table mt-4">
                         <tr>
                             <th>
-                                nama nasabah
+                                Nama Nasabah
                             </th>
                             <th>
-                                waktu mendaftar
+                                Waktu Mendaftar
                             </th>
                             <th>
-                                aksi
+                                Aksi
                             </th>
                         </tr>
                         @forelse($nasabah_inaktif as $ni)
@@ -39,7 +39,7 @@
                         @empty
                             <tr>
                                 <td colspan="4">
-                                    <p class="py-3 text-center">tidak ada pengguna disini</p>
+                                    <p class="py-3 text-center">Tidak Ada Pengguna Disini</p>
                                 </td>
                             </tr>
                         @endforelse
@@ -50,17 +50,17 @@
 
             <div class="card mt-5">
                 <div class="card-body">
-                    <h2 class="h5 fw-bold py-2 text-center">daftar nasabah yang sudah aktif</h2>
+                    <h2 class="h5 fw-bold py-2 text-center">Daftar Nasabah Yang Sudah Aktif</h2>
                     <table class="table mt-4">
                         <tr>
                             <th>
-                                nama nasabah
+                                Nama Nasabah
                             </th>
                             <th>
-                                waktu mendaftar
+                                Waktu Mendaftar
                             </th>
                             <th>
-                                aksi
+                                Aksi
                             </th>
                         </tr>
                         @forelse($nasabah_aktif as $na)
@@ -80,7 +80,7 @@
                         @empty
                             <tr>
                                 <td colspan="4">
-                                    <p class="py-3 text-center">tidak ada pengguna disini</p>
+                                    <p class="py-3 text-center">Tidak Ada Pengguna Disini</p>
                                 </td>
                             </tr>
                         @endforelse
@@ -89,7 +89,7 @@
             </div>
 
             <div class="mt-3">
-                <a href="{{ route('dashboard') }}" class="btn btn-success">kembali</a>
+                <a href="{{ route('dashboard') }}" class="btn btn-success">Kembali</a>
             </div>
         </div>
     </div>

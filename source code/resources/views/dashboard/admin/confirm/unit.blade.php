@@ -3,22 +3,22 @@
     <div class="d-flex justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
             <div class="d-flex justify-content-between">
-                <h1 class="h2">daftar pengguna bank sampah</h1>
+                <h1 class="h2">Daftar Pengguna Bank Sampah</h1>
             </div>
 
             <div class="card mt-5">
                 <div class="card-body">
-                    <h2 class="h5 fw-bold py-2 text-center">daftar bank sampah yang belum aktif</h2>
+                    <h2 class="h5 fw-bold py-2 text-center">Daftar Bank Sampah Yang Belum Aktif</h2>
                     <table class="table mt-4">
                         <tr>
                             <th>
-                                nama bank sampah
+                                Nama Bank Sampah
                             </th>
                             <th>
-                                waktu mendaftar
+                                Waktu Mendaftar
                             </th>
                             <th>
-                                aksi
+                                Aksi
                             </th>
                         </tr>
                         @forelse($unit_inaktif as $ui)
@@ -31,15 +31,15 @@
                                 </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="{{ route('man.unit.detail', ['id' => $ui->id]) }}" class="btn btn-sm btn-primary">detail</a>
-                                        <a href="{{ route('man.unit.activate', ['id' => $ui->id]) }}" class="btn btn-sm btn-success">aktifkan</a>
+                                        <a href="{{ route('man.unit.detail', ['id' => $ui->id]) }}" class="btn btn-sm btn-primary">Detail</a>
+                                        <a href="{{ route('man.unit.activate', ['id' => $ui->id]) }}" class="btn btn-sm btn-success">Aktifkan</a>
                                     </div>
                                 </td>
                             </tr>
                         @empty
                             <tr>
                                 <td colspan="4">
-                                    <p class="py-3 text-center">tidak ada pengguna disini</p>
+                                    <p class="py-3 text-center">Tidak Ada Pengguna Disini</p>
                                 </td>
                             </tr>
                         @endforelse
@@ -50,17 +50,17 @@
 
             <div class="card mt-5">
                 <div class="card-body">
-                    <h2 class="h5 fw-bold py-2 text-center">daftar bank yang sudah aktif</h2>
+                    <h2 class="h5 fw-bold py-2 text-center">Daftar Bank Yang Sudah Aktif</h2>
                     <table class="table mt-4">
                         <tr>
                             <th>
-                                nama bank sampah
+                                Nama Bank Sampah
                             </th>
                             <th>
-                                waktu mendaftar
+                                Waktu Mendaftar
                             </th>
                             <th>
-                                aksi
+                                Aksi
                             </th>
                         </tr>
                         @forelse($unit_aktif as $ua)
@@ -73,14 +73,14 @@
                                 </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="{{ route('man.unit.detail', ['id' => $ua->id]) }}" class="btn btn-sm btn-primary">detail</a>
+                                        <a href="{{ route('man.unit.detail', ['id' => $ua->id]) }}" class="btn btn-sm btn-primary">Detail</a>
                                     </div>
                                 </td>
                             </tr>
                         @empty
                             <tr>
                                 <td colspan="4">
-                                    <p class="py-3 text-center">tidak ada pengguna disini</p>
+                                    <p class="py-3 text-center">Tidak Ada Pengguna Disini</p>
                                 </td>
                             </tr>
                         @endforelse
@@ -89,7 +89,7 @@
             </div>
 
             <div class="mt-3">
-                <a href="{{ route('dashboard') }}" class="btn btn-success">kembali</a>
+                <a href="{{ route('dashboard') }}" class="btn btn-success">Kembali</a>
             </div>
         </div>
     </div>

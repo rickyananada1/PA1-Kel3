@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Blog;
+use App\Models\Cerita;
 use App\Models\Nasabah;
 use App\Models\saldo;
 use App\Models\Unit;
@@ -21,14 +21,14 @@ class DashboardController extends Controller
                 $unit = Unit::where('user_id', Auth::user()->id)->first();
                 // jumlah nasabah
                 $jumlahNasabah = Nasabah::where('nasabah_of', $unit->id)->count();
-                $jumlahBlog = Blog::where('author', $unit->id)->count();
+                $jumlahCerita = Cerita::where('author', $unit->id)->count();
 
                 $Nasabah = Nasabah::where('nasabah_of', $unit->id)->limit(3)->get();
 
 
                 $returning = [
                     'jumlah_nasabah' => $jumlahNasabah,
-                    'jumlah_blog' => $jumlahBlog,
+                    'jumlah_cerita' => $jumlahCerita,
                     'data_unit' => $unit,
                     'nasabah' => $Nasabah
                 ];

@@ -27,7 +27,7 @@
         </div>
     </section><!-- Breadcrumbs Section -->
 
-    <!-- ======= Blog Section ======= -->
+    <!-- ======= Cerita Section ======= -->
 
     <section class="section my-5">
         <div class="container">
@@ -51,7 +51,7 @@
                                     <li class="pt-4">
                                         <p>
                                             <small>
-                                                <i>Lihat cerita mereka <a href="{{ route('blog.by.author', ['selected' => $unit->id]) }}" style="color:blue"							>disini</a></i>
+                                                <i>Lihat cerita mereka <a href="{{ route('cerita.by.author', ['selected' => $unit->id]) }}" style="color:blue"							>disini</a></i>
                                             </small>
                                         </p>
                                     </li>

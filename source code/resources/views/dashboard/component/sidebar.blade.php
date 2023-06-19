@@ -19,13 +19,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <button class="nav-link dropdown-toggle text-black" data-bs-toggle="collapse" data-bs-target="#blog-collapse" aria-expanded="true">
-                        Blog
+                    <button class="nav-link dropdown-toggle text-black" data-bs-toggle="collapse" data-bs-target="#cerita-collapse" aria-expanded="true">
+                        Cerita
                     </button>
-                    <div class="collapse" id="blog-collapse" style="">
+                    <div class="collapse" id="cerita-collapse" style="">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li class="nav-item"><a class="nav-link" href="{{ route('blog.list') }}">Daftar Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('blog.kategori.home') }}">Daftar Kategori Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('cerita.list') }}">Daftar Cerita</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('cerita.kategori.home') }}">Daftar Kategori Cerita</a></li>
                         </ul>
                     </div>
                 </li>
@@ -37,7 +37,7 @@
                 @break
             @case(1)
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard/saldo">Riwayat Saldo anda</a>
+                    <a class="nav-link" href="/dashboard/saldo">Riwayat Saldo Anda</a>
                 </li>
 
                 @break

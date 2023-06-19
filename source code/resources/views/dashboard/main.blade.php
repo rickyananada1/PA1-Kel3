@@ -24,8 +24,8 @@
                                 <div class="col-lg-6 mt-2">
                                     <section class="card shadow-sm">
                                         <div class="card-body d-flex justify-content-between align-items-center">
-                                            <h3 class="h5">jumlah postingan <br> blog</h3>
-                                            <p><span class="display-3">{{ $jumlah_blog }}</span></p>
+                                            <h3 class="h5">jumlah postingan <br> cerita</h3>
+                                            <p><span class="display-3">{{ $jumlah_cerita }}</span></p>
                                         </div>
                                     </section>
                                 </div>
@@ -45,7 +45,7 @@
                                             <a href="{{ route('sampah.tambah') }}" class="link-success">Tambahkan data sampah</a>
                                         </p>
                                         <p class="fast-action">
-                                            <a href="{{ route('blog.write') }}" class="link-success">Tambahkan blog {{ $data_unit->nama_unit }}</a>
+                                            <a href="{{ route('cerita.write') }}" class="link-success">Tambahkan cerita {{ $data_unit->nama_unit }}</a>
                                         </p>
                                     </div>
                                 </div>

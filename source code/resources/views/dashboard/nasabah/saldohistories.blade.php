@@ -8,7 +8,7 @@
                 </h1>
                 <div class="text-right">
                     <h3 class="h6">
-                        jumlah saldo anda saat ini
+                        Jumlah Saldo Anda Saat Ini
                     </h3>
                     <p class="h1 fw-bold">
                         <span class="h3">Rp.</span>{{ $saldo }}
@@ -17,8 +17,8 @@
             </div>
             <table class="table">
                 <tr>
-                    <th>jumlah transaksi</th>
-                    <th>tanggal</th>
+                    <th>Jumlah Transaksi</th>
+                    <th>Tanggal</th>
                 </tr>
                 @forelse($saldoHistory as $persejarah)
                     <tr>
@@ -40,7 +40,7 @@
                     <tr>
                         <td colspan="2">
                             <p class="text-center">
-                                <b>anda belum melakukan transaksi</b>
+                                <b>Anda Belum Melakukan Transaksi</b>
                             </p>
                         </td>
                     </tr>

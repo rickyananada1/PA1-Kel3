@@ -20,7 +20,7 @@
                 <div class="card shadow">
                     <div class="card-body m-4">
                         @if(\Illuminate\Support\Facades\Auth::check())
-                            <h1 class="h2">akun anda belum akitf</h1>
+                            <h1 class="h2">Akun Anda Belum Akitf</h1>
                             <hr>
                             <p class="">
                                 Mohon maaf, akun anda perlu diaktifkan terlebih dahulu
@@ -36,7 +36,7 @@
                                 <span>atau</span>
 
                                 <a href="{{ route('dashboard') }}" class="btn btn-success"><small>
-                                        periksa ke dashboard
+                                        Periksa Ke Dashboard
                                     </small> </a>
                             </div>
                         @else

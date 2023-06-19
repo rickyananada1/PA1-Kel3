@@ -24,12 +24,12 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Blog
+                                Cerita
                             </a>
 
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ route('blog.list') }}">Daftar Blog</a></li>
-                                <li><a class="dropdown-item" href="{{ route('blog.kategori.home') }}">Daftar Kategori Blog</a></li>
+                                <li><a class="dropdown-item" href="{{ route('cerita.list') }}">Daftar Cerita</a></li>
+                                <li><a class="dropdown-item" href="{{ route('cerita.kategori.home') }}">Daftar Kategori Cerita</a></li>
                             </ul>
                         </li>
 
@@ -40,7 +40,7 @@
                         @break
                     @case(1)
                         <li class="nav-item">
-                            <a class="nav-link" href="/dashboard/saldo">Riwayat Saldo anda</a>
+                            <a class="nav-link" href="/dashboard/saldo">Riwayat Saldo Anda</a>
                         </li>
 
                     @break
